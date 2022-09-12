@@ -12,7 +12,7 @@ a {
 header {
     display: flex;
     min-height: 70px;
-    background-color: #284b63;
+    background-color: #4C7093;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -58,7 +58,7 @@ nav a:hover {
 
 section {
     padding: 15px;
-    border: 7px solid #284b63;
+    border: 7px solid #4C7093;
     margin: 10px;
 }
 
@@ -67,7 +67,7 @@ section h2 {
 }
 
 table, th, td {
-    border: 3px solid #153243;
+    border: 3px solid #4C7093;
     border-collapse: collapse;
 }
 
@@ -112,7 +112,7 @@ table, th, td {
 
 input[type=submit] {
     background-color: white;
-    width: 25%;
+    width: 100%;
     border: 2px solid #4CAF50;
     color: black;
     padding: 15px 32px;
@@ -165,7 +165,7 @@ legend {
 
 textarea, select {
     margin: 8px 0;
-    width: 50%;
+    width: 100%;
     border: 2px solid #284b63;
     border-radius: 4px;
     padding: 8px 8px;
@@ -173,7 +173,7 @@ textarea, select {
 }
 
 input[type=text], input[type=mail], input[type=password], select {
-    width: 50%;
+    width: 100%;
     border: 2px solid #284b63;
     border-radius: 4px;
     padding: 8px 8px;

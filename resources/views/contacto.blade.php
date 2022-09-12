@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axl Coronado - Formulario</title>
+    <title>ELITE-SI - Contacto</title>
     <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/estilos.css')}}">
 </head>
 <body>
     <header>
         <div class="nav">
-            <img src="{{asset('images/logo_udg.png')}}" id="logo_udg" alt="logo udg">
-            <h2>Universidad de Guadalajara</h2>
+            <img src="{{asset('images/logo/elite-si_marca.png')}}" id="logo_udg" alt="logo udg">
+            <h2>ELITE-SI</h2>
         </div>
         <nav>
-            <a class="navigation" href="index.html">Página Principal</a>
-            <a class="navigation" href="formulario.html">Formulario</a>
+            <a class="navigation" href="#">Página Principal</a>
+            <a class="navigation" href="#">Formulario</a>
         </nav>
     </header>
 
@@ -46,8 +46,8 @@
     </div>
 
     <footer>
-        <p>Autor: Bryan Axl Coronado Cabrera</p>
-        <p><a href="mailto:bryan.coronado6352@alumnos.udg.mx" id="mailto">bryan.coronado6352@alumnos.udg.mx</a></p>
+        <p>Autor: ELITE-SI</p>
+        <p><a href="#" id="mailto">elite@si.com.mx</a></p>
         <div>
             <p>&#169 Todos los derechos reservados</p>
         </div>
