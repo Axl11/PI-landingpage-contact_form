@@ -25,18 +25,29 @@
 
         <section id="formulario">
             <h2>Registro de Formulario</h2>
-            <form action="formulario.html" method="get">
-                <div class="form">
-                    <label for="nombre" class="bold">Nombre:<br/><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" value="{{ $nombre }}" required></label><br/>
-                </div>
+            <form action="/recibe-form-contacto" method="post">
+                @csrf
 
                 <div class="form">
-                    <label for="correo" class="bold">Correo electrónico:<br/><input type="mail" id="correo" name="correo" placeholder="alguien@example.com" value="{{ $email }}" required></label><br/>
+                    <label for="nombre" class="bold">Nombre:<br/><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" value="{{ $nombre ??'' }}"></label><br/>
                 </div>
+                @error('nombre')
+                    <i>{{ $message }}</i>
+                @enderror
 
                 <div class="form">
-                <label for="comentario" class="bold">Comentario:<br/><textarea id="comentario" name="comentario" cols="50" rows="15" placeholder="Escribe aquí tu comentario..."></textarea>  </label><br/>
+                    <label for="correo" class="bold">Correo electrónico:<br/><input type="mail" id="correo" name="correo" placeholder="alguien@example.com" value="{{ $email ??'' }}"></label><br/>
                 </div>
+                @error('correo')
+                    <i>{{ $message }}</i>
+                @enderror
+
+                <div class="form">
+                <label for="comentario" class="bold">Comentario:<br/><textarea id="comentario" name="comentario" cols="50" rows="15" placeholder="Escribe aquí tu comentario..." value="{{ old('comentario') }}"></textarea>  </label><br/>
+                </div>
+                @error('comentario')
+                    <i>{{ $message }}</i>
+                @enderror
 
                 <div id="div_button">
                     <input type="submit" value="Enviar">
