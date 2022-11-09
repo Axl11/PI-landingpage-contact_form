@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -27,10 +28,18 @@ class SitioController extends Controller
         $request->validate([
             'nombre' => 'required|max:30|min:3',
             'correo' => ['required', 'email'],
-            'comentario' => 'required',
+            'comentario' => 'required|min:5',
         ]);
         //Insertar a DB
+        DB::table('contactos')->insert([
+            'nombre' => $request->nombre,
+            'correo' => $request->correo,
+            'comentario' => $request->comentario,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
         //Redirigir
+        return redirect('/contacto');
     }
 
     public function landingpage()

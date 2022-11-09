@@ -20,7 +20,7 @@
 							<a href="#empresa">Empresa</a> |
 							<a href="#servicios">Servicios +</a> |
 							<a href="#vacantes">Vacantes</a>
-							<!-- <a href="#footer">Contacto</a> -->
+							<a href="/contacto">Contacto</a>
 						</nav>
 					</header>
 
